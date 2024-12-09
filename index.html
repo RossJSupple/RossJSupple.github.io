@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <H1>Hello</H1>
+    <Carousel
+  autoplay
+  autoplayDuration={2000}
+>
+  {#each colors as { color, text } (color)}
+    <Color {color} {text} />
+  {/each}
+</Carousel>
 </body>
 </html>
